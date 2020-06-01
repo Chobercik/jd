@@ -1,0 +1,62 @@
+body
+{
+	background-image: url("dis.jpg");
+	color: white;
+	cursor: wait;
+	font-family: 'Bebas Neue', cursive;
+}
+a
+{
+	text-decoration:none;
+	color: transparent;
+}
+.wrapper
+{
+	width: 100%;
+	height: 1000px;
+}
+.header
+{
+	width: 100%;
+	background-color: black;
+	height: 75px;
+	text-align: center;
+	font-size: 45px;
+}
+#xd
+{
+	width: 100%;
+	background-color: #4287f5;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 100px;
+}
+#pisze
+{
+	margin-top: 20px;
+	background-color: white;
+	color: #4287f5;
+	font-size: 40px;
+	text-align: center;
+	height: 300px;
+}
+#s
+{
+	color: #4287f5;
+}
+.botton
+{
+	background-color: #4287f5;
+	color: white;
+	width: 250px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-size: 50px;
+}
+#botton:hover
+{
+	background-color: white;
+	color: #4287f5;
+}
