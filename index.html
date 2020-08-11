@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-AU-Compatible" content="IE=edge, chrome=1" />
+	
+	<title>Test</title>
+	
+	<meta name="description" content="Profesjonalne strony na zamówienia." />
+	<meta name="keywords" content="strony internetowe" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="wrapper"> 
+	
+		<div class="header">
+			<div class="logo">
+				<img src="img/logo.png" style="float: left;" />	<span style="position: relative; top: 20px;"><span style="color: #fcba03 ">Społeczność</span> Nerdów</span>
+				<div style="clear:both;">
+			</div>
+		</div>
+		
+		<div class="nav">
+			<div class="menu">
+				<ol>
+					<li><a href="#">Strona Główna</a>
+						<ul>
+							
+							<li><a href="#">Strona</a></li>
+							<li><a href="#">Główna</a></li>
+						</ul>
+					</li>
+					<li><a href="#">O discordzie</a>
+						<ul>
+							<li><a href="#">Administracja</a></li>
+							<li><a href="#">Discord</a></li>
+							<li><a href="#">Opinie</a></li>
+						</ul>
+					</li>
+					<div class="login">
+						Zaloguj
+					</div>
+				</ol>
+			</div>
+		</div>
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a semper neque. Aenean ullamcorper est in libero aliquet, eu blandit urna iaculis. Aliquam erat volutpat. Sed efficitur lobortis lacus ut euismod. Fusce nec accumsan nisl. In nec lorem et nunc volutpat ultricies. Integer malesuada viverra orci finibus condimentum. Nulla malesuada lacus vel est semper, at ultrices magna iaculis. Pellentesque vehicula urna id felis ultrices, sit amet rutrum velit aliquam. Curabitur varius leo in faucibus volutpat. Suspendisse faucibus facilisis massa vel imperdiet. Nunc arcu leo, porta non ligula nec, varius auctor turpis. Vivamus diam turpis, gravida nec tortor vulputate, ullamcorper convallis lectus. Donec porttitor nulla a dui condimentum, eget efficitur erat fermentum.</p>
+			
+			<p>Suspendisse luctus in nulla suscipit tincidunt. In hac habitasse platea dictumst. Aliquam tempor tempus imperdiet. Proin nec justo mauris. Suspendisse imperdiet posuere molestie. Suspendisse tempor nulla sed urna dictum mollis. Donec a viverra lectus, ullamcorper interdum est. Maecenas quis ornare neque, at rutrum est. Aliquam erat volutpat. Etiam rutrum mollis urna, nec pretium turpis dapibus ac. Donec pretium velit dui, ut egestas augue dictum ut. Proin eu cursus metus.</p>
+
+			<p>Fusce ut cursus nisl. Vivamus accumsan nisi ac neque viverra sagittis. Ut at tincidunt nunc. Integer nisi nisl, accumsan a aliquet in, maximus vitae arcu. Vestibulum id feugiat enim. Maecenas condimentum rutrum est. Curabitur a tempor risus, ac porttitor augue. Sed mattis nisi ac cursus egestas. Ut a rhoncus risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Vivamus vestibulum malesuada lacus sit amet congue. Phasellus tincidunt molestie consectetur. Nullam malesuada id lectus sed pulvinar.</p>
+			
+			<p>Suspendisse luctus in nulla suscipit tincidunt. In hac habitasse platea dictumst. Aliquam tempor tempus imperdiet. Proin nec justo mauris. Suspendisse imperdiet posuere molestie. Suspendisse tempor nulla sed urna dictum mollis. Donec a viverra lectus, ullamcorper interdum est. Maecenas quis ornare neque, at rutrum est. Aliquam erat volutpat. Etiam rutrum mollis urna, nec pretium turpis dapibus ac. Donec pretium velit dui, ut egestas augue dictum ut. Proin eu cursus metus.</p>
+
+			<p>Fusce ut cursus nisl. Vivamus accumsan nisi ac neque viverra sagittis. Ut at tincidunt nunc. Integer nisi nisl, accumsan a aliquet in, maximus vitae arcu. Vestibulum id feugiat enim. Maecenas condimentum rutrum est. Curabitur a tempor risus, ac porttitor augue. Sed mattis nisi ac cursus egestas. Ut a rhoncus risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Vivamus vestibulum malesuada lacus sit amet congue. Phasellus tincidunt molestie consectetur. Nullam malesuada id lectus sed pulvinar.</p>
+		</div>
+		
+		<div class="socials">
+			<div class="socialsdivs">
+				
+				<a href="https://discord.gg/drMbPUR" target="_blank"><div class="dsc"><img src="img/dsc.png" height="100px" width="100px" style="margin-top: 25px;"/></div></a>
+				
+				<a href="https://disboard.org/pl/server/732991738985054261" target="_blank"><div class="db"><img src="img/db.png" height="100px" width="100px" style="margin-top: 25px;"/></div>
+				<div style="clear: both;"> </div></a>
+				
+			</div>
+		</div>
+		
+		<div class="footer">
+			Społeczność Nerdów &copy 2020
+		</div>
+		
+	</div>
+	
+<script src="jquery-3.5.1.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+</body>
+</html>
